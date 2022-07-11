@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Rodrigo Souza</title>
+</head>
+<body>
+    <header class="container-nav">
+        <nav class="nav-bar">
+            <div class="container-logo">
+                <p class="logo-header"><a href="index.html">RS</a></p>
+                <!-- <img src="img/logoh.png" alt="logo-header"> -->
+            </div>
+            <ul>
+                <li onclick="scrollToAbout()"><i class="fa-solid fa-face-smile-beam"></i>Sobre mim</li>
+                <li onclick="scrollToExp()"><i class="fa-solid fa-briefcase"></i>Experiências</li>
+                <li onclick="scrollToProjects()"><i class="fa-solid fa-book"></i>Projetos</li>
+                <li onclick="scrollToContact()"><i class="fa-solid fa-address-book"></i>Contato</li>
+            </ul>
+            <i onclick="toggle()" id="btn-toggle" class="fa-solid fa-bars-staggered fa-2x"></i>
+        </nav>
+    </header>
+
+    <div id="menu-toggle">
+        <ul>
+            <li onclick="scrollToAboutResponsive()"><i class="fa-solid fa-face-smile-beam"></i>Sobre mim</li>
+            <li onclick="scrollToExpResponsive()"><i class="fa-solid fa-briefcase"></i>Experiências</li>
+            <li onclick="scrollToProjectsResponsive()"><i class="fa-solid fa-book"></i>Projetos</li>
+            <li onclick="scrollToContactResponsive()"><i class="fa-solid fa-address-book"></i>Contato</li>
+        </ul>
+    </div>
+
+    <section class="container-title">
+        <div class="title">
+            <h6 class="hello">Olá, meu nome é</h6>
+            <h1>Rodrigo Bento de Souza.</h1>
+            <p class="sub-title">Atualmente sou estudante de desenvolvimento web (front-end), estou inspirado a construir e criar por meio da programação.</p>
+            <button><a href="https://drive.google.com/file/d/1EChZFxLJdgO-vnH22zYDuO9pROAOQcUB/view?usp=sharing" target="_blank">Meu curriculo</a></button>
+        </div>
+    </section>
+
+    <section class="container-about">
+        <div class="about">
+            <h2>Sobre mim<hr></h2>
+            <p>
+                Olá, meu nome é Rodrigo, tenho 27 anos, apaixonado por tecnologia e inovação, estou nesta área de TI há quase 07 anos. Atualmente sou estagiário na área de Engenharia e Serviços ao Cliente na Vivo (Telefônica Brasil). Desde pequeno, sempre tive interesse por tecnologia e desejo de saber como os aplicativos, sites, jogos, eram desenvolvidos. Após quase 07 anos trabalhando como operador de atendimento decidi iniciar minha jornada como programador. 
+                <br><br>
+                Hoje, em transição de carreira, sou estudante no 2º semestre de Análise e Desenvolvimento de Sistemas pela Universidade Presbiteriana Mackenzie e tenho dedicado parte do meu tempo para adquirir conhecimento na área de programação com foco em desenvolvimento web (front-end) através de cursos, bootscamps, etc.
+            </p>
+
+            <h3>Tecnlogias que estou estudando:</h3>
+
+            <ul>
+                <li><i class="html fa-brands fa-html5"></i>HTML5</li>
+                <li><i class="css fa-brands fa-css3-alt"></i>CSS3</li>
+                <li><i class="js fa-brands fa-js"></i>JavaScript</li>
+                <li><i class="bs fa-brands fa-bootstrap"></i>Bootstrap 5</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container-experience">
+        <div class="experience">
+            <h2>Experiência Profissional<hr></h6>
+            <div class="experience-menu">
+                <ul>
+                    <li class="active-target-1" onclick="change1()">Vivo</li>
+                    <li class="active-target-2" onclick="change2()">HardOnline</li>
+                    <li class="active-target-3" onclick="change3()">Fidelity</li>
+                    <li class="active-target-4" onclick="change4()">HardOnline</li>
+                </ul>
+
+                <div id="experience-1">
+                    <h3>Estagiário em Engenharia e Serviços ao Cliente na Vivo (Telefônica Brasil), São Paulo - SP</h3>
+                    <h5>Desde Maio/2022</h5>
+
+                    <p>Atuo auxiliando na criação de páginas intranet como desenvolvedor front-end.</p>
+                </div>
+
+                <div id="experience-2">
+                    <h3>Suporte Técnico na HardOnline Internet, Ouro Fino - MG</h3>
+                    <h5>Outubro 2019 - Abril 2022</h5>
+
+                    <p>Atuei prestando suporte técnico por telefone na rede de internet dos usuários oferecendo soluções aos problemas técnicos, auxiliando na configuração de roteadores, venda de produtos e planos de internet.</p>
+                    <p>Tenho conhecimento de cabeamento de rede (cabo coaxial, fibra óptica), equipamentos de rede (modens, roteadores, hubs, switches), configuração de roteadores e etc.</p>
+                </div>
+
+                <div id="experience-3">
+                    <h3>Operador de Atendimento na Fidelity Processadora e Serviços, Itu - SP</h3>
+                    <h5>Janeiro 2016 - Outubro 2018</h5>
+
+                    <p>Atuei prestando atendimento telefônico para clientes do banco Bradesco Catões, apresentando soluções financeiras, orientações sobre pagamento, parcelamento de faturas, crédito rotativo, venda de cartões, seguros, capitalizações e etc.</p>
+                    <p>Atuei no setor de retenção de cartões, meu papel principal era argumentar e apresentar os benefícios de cada cartão.</p>
+                </div>
+
+                <div id="experience-4">
+                    <h3>Suporte Técnico na HardOnline Internet, Ouro Fino - MG</h3>
+                    <h5>Setembro 2012 - Novembro 2015</h5>
+
+                    <p>Atuei prestando suporte técnico por telefone na rede de internet dos usuários oferecendo soluções aos problemas técnicos, auxiliando na configuração de roteadores, venda de produtos e planos de internet.</p>
+                    <p>Pude desenvolver o conhecimento em cabeamento de rede (cabo coaxial, fibra óptica), equipamentos de rede (modens, roteadores, hubs, switches), configuração de roteadores e etc.</p>
+                    <p>Atuei como auxiliar de escritório e recebimento (caixa) onde trabalhei com sistemas internos e pacote Office (Word, Excel, Power Point).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-projects">
+        <h2>Meus Projetos<hr></h2>
+        <div class="projects">
+            <ul>
+                <li>
+                    <div class="title-project">
+                        <div class="title-icon-left">
+                            <i class="resposive-icon-hidden fa-regular fa-folder fa-3x"></i>
+                            <i class="resposive-icon-show fa-regular fa-folder fa-2x"></i>
+                        </div>
+
+                        <div class="title-icon-right">
+                            <a class="resposive-icon-hidden" target="_blank" href="https://rodrigobsouza.github.io/CEP_API/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-hidden" target="_blank" href="https://github.com/RodrigoBSouza/CEP_API"><i class="fa-brands fa-github"></i></a>
+
+                            <a class="resposive-icon-show" target="_blank" href="https://rodrigobsouza.github.io/CEP_API/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-show" target="_blank" href="https://github.com/RodrigoBSouza/CEP_API"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://rodrigobsouza.github.io/CEP_API/">
+                        <div class="body-project">
+                            <h1>Consumindo uma API de CEP</h1>
+                            <p>Desenvolvi este formulário para consultar endereços pelo CEP digitado, utilizei a API VIA CEP. Neste projeto eu utilizei HTML5, CSS3 e JavaScript.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="title-project">
+                        <div class="title-icon-left">
+                            <i class="resposive-icon-hidden fa-regular fa-folder fa-3x"></i>
+                            <i class="resposive-icon-show fa-regular fa-folder fa-2x"></i>
+                        </div>
+
+                        <div class="title-icon-right">
+                            <a class="resposive-icon-hidden" target="_blank" href="https://rodrigobsouza.github.io/super_hero/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-hidden" target="_blank" href="https://github.com/RodrigoBSouza/super_hero"><i class="fa-brands fa-github"></i></a>
+
+                            <a class="resposive-icon-show" target="_blank" href="https://rodrigobsouza.github.io/RelogioAnalogico/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-show" target="_blank" href="https://github.com/RodrigoBSouza/RelogioAnalogico"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://rodrigobsouza.github.io/super_hero/">
+                        <div class="body-project">
+                            <h1>Consumindo uma API do SUPER HERO</h1>
+                            <p>Desenvolvi este projeto para um exercício da faculdade, o propósito é comparar dois heróis pelos atributos e mostrar o vencedor. Neste projeto eu utilizei HTML5, CSS3 e JavaScript.</p>
+                        </div>
+                    </a>    
+                </li>
+                <li>
+                    <div class="title-project">
+                        <div class="title-icon-left">
+                            <i class="resposive-icon-hidden fa-regular fa-folder fa-3x"></i>
+                            <i class="resposive-icon-show fa-regular fa-folder fa-2x"></i>
+                        </div>
+
+                        <div class="title-icon-right">
+                            <a class="resposive-icon-hidden" target="_blank" href="https://rodrigobsouza.github.io/CalculadoraImc/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-hidden" target="_blank" href="https://github.com/RodrigoBSouza/CalculadoraImc/"><i class="fa-brands fa-github"></i></a>
+
+                            <a class="resposive-icon-show" target="_blank" href="https://rodrigobsouza.github.io/RelogioAnalogico/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-show" target="_blank" href="https://github.com/RodrigoBSouza/RelogioAnalogico"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://rodrigobsouza.github.io/CalculadoraImc/">
+                        <div class="body-project">
+                            <h1>Calculdora de IMC</h1>
+                            <p>Neste projeto eu desenvolvi uma calculadora de IMC, fiz este projeto para praticar. Utilizei HTML5, CSS3 e JavaScript para fazê-lo.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="title-project">
+                        <div class="title-icon-left">
+                            <i class="resposive-icon-hidden fa-regular fa-folder fa-3x"></i>
+                            <i class="resposive-icon-show fa-regular fa-folder fa-2x"></i>
+                        </div>
+
+                        <div class="title-icon-right">
+                            <a class="resposive-icon-hidden" target="_blank" href="https://rodrigobsouza.github.io/RelogioAnalogico/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-hidden" target="_blank" href="https://github.com/RodrigoBSouza/RelogioAnalogico"><i class="fa-brands fa-github"></i></a>
+
+                            <a class="resposive-icon-show" target="_blank" href="https://rodrigobsouza.github.io/RelogioAnalogico/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-show" target="_blank" href="https://github.com/RodrigoBSouza/RelogioAnalogico"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://rodrigobsouza.github.io/RelogioAnalogico/">
+                        <div class="body-project">
+                            <h1>Relógio Analógico</h1>
+                            <p>Desenvolvi este relógio analógico utilizando HTML5, CSS3 e JavaScript.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="title-project">
+                        <div class="title-icon-left">
+                            <i class="resposive-icon-hidden fa-regular fa-folder fa-3x"></i>
+                            <i class="resposive-icon-show fa-regular fa-folder fa-2x"></i>
+                        </div>
+
+                        <div class="title-icon-right">
+                            <a class="resposive-icon-hidden" target="_blank" href="https://rodrigobsouza.github.io/CalculadoraJavascript/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-hidden" target="_blank" href="https://github.com/RodrigoBSouza/CalculadoraJavascript"><i class="fa-brands fa-github"></i></a>
+
+                            <a class="resposive-icon-show" target="_blank" href="https://rodrigobsouza.github.io/CalculadoraJavascript/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-show" target="_blank" href="https://github.com/RodrigoBSouza/CalculadoraJavascript"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://rodrigobsouza.github.io/CalculadoraJavascript/">
+                        <div class="body-project">
+                            <h1>Calculadora Digital</h1>
+                            <p>A famosa calculadora digital, desenvolvi utilizando HTML5, CSS3 e JavaScript, foi meu primeiro projeto que desenvolvi utilizando JavaScript.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="title-project">
+                        <div class="title-icon-left">
+                            <i class="resposive-icon-hidden fa-regular fa-folder fa-3x"></i>
+                            <i class="resposive-icon-show fa-regular fa-folder fa-2x"></i>
+                        </div>
+
+                        <div class="title-icon-right">
+                            <a class="resposive-icon-hidden" target="_blank" href="https://rodrigobsouza.github.io/SlideJavascript/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-hidden" target="_blank" href="https://github.com/RodrigoBSouza/SlideJavascript"><i class="fa-brands fa-github"></i></a>
+
+                            <a class="resposive-icon-show" target="_blank" href="https://rodrigobsouza.github.io/SlideJavascript/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="resposive-icon-show" target="_blank" href="https://github.com/RodrigoBSouza/SlideJavascript"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://rodrigobsouza.github.io/SlideJavascript/">
+                        <div class="body-project">
+                            <h1>Carousel JS (Slideshow)</h1>
+                            <p>Desenvolvi este slideshow com HTML5, CSS3 JavaScript, é bem simples mas foi um projeto apenas para colocar em prática o que estou estudando.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button><a target="_blank" href="https://github.com/RodrigoBSouza?tab=repositories">Ver mais</a></button>
+    </section>
+
+    <section class="container-contact">
+        <div class="contact">
+            <h2>Contato<hr></h2>
+            <p>Se você gostou do meu trabalho como estudante/desenvolvedor e queira entrar em contato ou eseja apenas falar um oi, fique à vontade, responderei o mais breve possível!</p>
+            <button><a href="mailto:rodrigbsouza@gmail.com">Me envie uma mensagem</a></button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <p>Desenvolvido por Rodrigo Souza.</p>
+
+            <nav>
+                <ul>
+                    <li><a target="_blank" href="https://github.com/RodrigoBSouza"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/rodrigo-b-souza/"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

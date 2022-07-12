@@ -96,10 +96,10 @@ h2 {
     position: fixed;
     top: 0;
     right: 0;
-    margin-top: 50px;
+    margin-top: 55px;
     background-color: var(--bg-color-1);
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 230px;
     padding: 10px;
     -webkit-box-shadow: -9px 6px 8px -2px rgba(0,0,0,0.46); 
     box-shadow: -9px 6px 8px -2px rgba(0,0,0,0.46);
@@ -122,9 +122,9 @@ h2 {
 
 #menu-toggle ul li {
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     color: var(--color-1);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: var(--primary-font);
 }
 
@@ -465,7 +465,6 @@ footer {
     justify-content: center;
     width: 75rem;
     margin: auto;
-    padding: 30px;
     display: flex;  
     background-color: #111;
 }

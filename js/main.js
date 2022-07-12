@@ -25,19 +25,19 @@ function scrollToContact() {
 }
 
 function scrollToAboutResponsive() {
-    window.scrollTo(0, 600);
+    window.scrollTo(0, 530);
 }
 
 function scrollToExpResponsive() {
-    window.scrollTo(0, 1450);
+    window.scrollTo(0, 1400);
 }
 
 function scrollToProjectsResponsive() {
-    window.scrollTo(0, 1950);
+    window.scrollTo(0, 1900);
 }
 
 function scrollToContactResponsive() {
-    window.scrollTo(0, 3500);
+    window.scrollTo(0, 4600);
 }
 
 const showExp1 = document.getElementById('experience-1');
